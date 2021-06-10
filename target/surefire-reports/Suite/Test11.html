@@ -1,0 +1,679 @@
+<html>
+<head>
+<title>TestNG:  Test11</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test11</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 10 14:18:02 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>69 seconds (69470 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner_Files.Signup_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to click on Sign Up with valid credentials", "Optional[User must be able to Signup with valid credentials]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;otp-0&apos;]&quot;}
+  (Session info: MicrosoftEdge=91.0.864.41)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DESKTOP-L6MSIP1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 91.0.864.41, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:56640}, msedge: {msedgedriverVersion: 91.0.864.41 (d07d58a95dc76c..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19c3359f0b4207f5c888f55406b624ac
+*** Element info: {Using=xpath, value=//input[@id=&apos;otp-0&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at Signup_positive_scenarios.Signup_positive_scenarios.signup_positive_tc_006(Signup_positive_scenarios.java:105)
+	at ?.User enters valid credentials(file:///C:/Users/Admin/Downloads/Regression_suite-Sprint5-main%20(1)/src/main/java/Signup_positive_scenarios/Signup_positive_scenarios.feature:20)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace874893735", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace874893735'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;otp-0&apos;]&quot;}
+  (Session info: MicrosoftEdge=91.0.864.41)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DESKTOP-L6MSIP1&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 91.0.864.41, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:56640}, msedge: {msedgedriverVersion: 91.0.864.41 (d07d58a95dc76c..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19c3359f0b4207f5c888f55406b624ac
+*** Element info: {Using=xpath, value=//input[@id=&apos;otp-0&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at Signup_positive_scenarios.Signup_positive_scenarios.signup_positive_tc_006(Signup_positive_scenarios.java:105)
+	at ?.User enters valid credentials(file:///C:/Users/Admin/Downloads/Regression_suite-Sprint5-main%20(1)/src/main/java/Signup_positive_scenarios/Signup_positive_scenarios.feature:20)
+</pre></div></td>
+<td>32</td>
+<td>Runner_Files.Signup_positive_scenarios_runner@186f8716</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner_Files.Landing_welcome_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Landing_welcome_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to Welcome page", "Optional[User must be able to see Welcome Screen,Login and Sign up]"</td>
+<td></td>
+<td>22</td>
+<td>Runner_Files.Landing_welcome_positive_scenarios_runner@7a675056</td></tr>
+<tr>
+<td title='Runner_Files.Landing_welcome_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Landing_welcome_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to click on Login button and navigate to Login page", "Optional[User must be able to see Welcome Screen,Login and Sign up]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Landing_welcome_positive_scenarios_runner@7a675056</td></tr>
+<tr>
+<td title='Runner_Files.Landing_welcome_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Landing_welcome_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to click on Sign Up button and navigate to Sign Up page", "Optional[User must be able to see Welcome Screen,Login and Sign up]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Landing_welcome_positive_scenarios_runner@7a675056</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid data in firstname  and lastname  fields", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>18</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a  validation message  on entering invalid Email ID", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should  get a  validation message on leaving Email ID field  blank", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering phone number with less than 10 digits in the Phone number field", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a  validation message on entering phone number with more than 10 digits in Phone number field", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering already registered phone number", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should  get a  validation message on leaving Email ID field  blank", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the password strength message  and progress bar is displayed while entering password in Password field", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a  validation message on entering different data in Password and Confirm Password fields", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the Sign Up button is disabled  when Terms & Conditions is unchecked", "Optional[Sign up button should be present on landing welcome page and on Sign up screen, user should able to provide information]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Signup_negative_scenarios_runner@1018bde2</td></tr>
+<tr>
+<td title='Runner_Files.Signup_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the browser is lauched and user clicks on the Signup button and navigates to Signup page", "Optional[User must be able to Signup with valid credentials]"</td>
+<td></td>
+<td>16</td>
+<td>Runner_Files.Signup_positive_scenarios_runner@186f8716</td></tr>
+<tr>
+<td title='Runner_Files.Signup_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the login page on clicking the login link", "Optional[User must be able to Signup with valid credentials]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Signup_positive_scenarios_runner@186f8716</td></tr>
+<tr>
+<td title='Runner_Files.Signup_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the data entered in both Password and Confirm password fields are masked", "Optional[User must be able to Signup with valid credentials]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Signup_positive_scenarios_runner@186f8716</td></tr>
+<tr>
+<td title='Runner_Files.Signup_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the password should be displayed on an eye click for Password fields", "Optional[User must be able to Signup with valid credentials]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Signup_positive_scenarios_runner@186f8716</td></tr>
+<tr>
+<td title='Runner_Files.Signup_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Confirm password field by comparing data entered in the Password field", "Optional[User must be able to Signup with valid credentials]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Signup_positive_scenarios_runner@186f8716</td></tr>
+<tr>
+<td title='Runner_Files.Signup_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Signup_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user should be navigated to the otp Login page", "Optional[User must be able to Signup with valid credentials]"</td>
+<td></td>
+<td>30</td>
+<td>Runner_Files.Signup_positive_scenarios_runner@186f8716</td></tr>
+<tr>
+<td title='Runner_Files.Login_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed to login when Phone number and Password fields are blank", "Optional[Validate login negative functionality]"</td>
+<td></td>
+<td>21</td>
+<td>Runner_Files.Login_negative_scenarios_runner@ba54932</td></tr>
+<tr>
+<td title='Runner_Files.Login_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid credentials in the Login Page", "Optional[Validate login negative functionality]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Login_negative_scenarios_runner@ba54932</td></tr>
+<tr>
+<td title='Runner_Files.Login_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is not allowed to enter more than 10 digits in the Phone number field", "Optional[Validate login negative functionality]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Login_negative_scenarios_runner@ba54932</td></tr>
+<tr>
+<td title='Runner_Files.Login_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed to login with invalid Phone number and valid Password", "Optional[Validate login negative functionality]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Login_negative_scenarios_runner@ba54932</td></tr>
+<tr>
+<td title='Runner_Files.Login_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed to login with invalid Password and valid phone number", "Optional[Validate login negative functionality]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Login_negative_scenarios_runner@ba54932</td></tr>
+<tr>
+<td title='Runner_Files.Login_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is not able to login on leaving Phone number field blank and only giving valid Password", "Optional[Validate login negative functionality]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Login_negative_scenarios_runner@ba54932</td></tr>
+<tr>
+<td title='Runner_Files.Login_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is not able to login on leaving Password field blank and only giving valid Phone number", "Optional[Validate login negative functionality]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Login_negative_scenarios_runner@ba54932</td></tr>
+<tr>
+<td title='Runner_Files.Login_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the Phone number' field is prefixed with +1 country code", "Optional[Test login page positive functionality]"</td>
+<td></td>
+<td>19</td>
+<td>Runner_Files.Login_positive_scenarios_runner@3cc1435c</td></tr>
+<tr>
+<td title='Runner_Files.Login_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to click on the Forgot password? link", "Optional[Test login page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Login_positive_scenarios_runner@3cc1435c</td></tr>
+<tr>
+<td title='Runner_Files.Login_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able click on the Sign up link", "Optional[Test login page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Login_positive_scenarios_runner@3cc1435c</td></tr>
+<tr>
+<td title='Runner_Files.Login_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to enter  the Password in the Password field", "Optional[Test login page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Login_positive_scenarios_runner@3cc1435c</td></tr>
+<tr>
+<td title='Runner_Files.Login_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to Login with valid data", "Optional[Test login page positive functionality]"</td>
+<td></td>
+<td>5</td>
+<td>Runner_Files.Login_positive_scenarios_runner@3cc1435c</td></tr>
+<tr>
+<td title='Runner_Files.Login_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Login_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to Landing page on clicking the Log out option", "Optional[Test login page positive functionality]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Login_positive_scenarios_runner@3cc1435c</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the mpowered health logo  should be present in the header", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>27</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the help page on clicking Help icon", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the Landing page on clicking Log out icon", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the alerts page on clicking Your alerts icon", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>6</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is able to click on the Drop down tab", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the  profile page on clicking  Your profile tab", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the ratings dashboard page on clicking Your ratings tab", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the Feedback Port   page  on clicking Feedback", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>5</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the Contact Us page  on clicking  Contact us", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>8</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to see Privacy Policy dialogue box on clicking on the Privacy Policy", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Headerpage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Headerpage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to see Terms & Conditions dialogue box on clicking on the Terms & Conditions", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Headerpage_positive_scenarios_runner@671a5887</td></tr>
+<tr>
+<td title='Runner_Files.Help_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Help_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the Frequently asked questions title  should be present in  Help page", "Optional[Test Help page positive functionality]"</td>
+<td></td>
+<td>22</td>
+<td>Runner_Files.Help_positive_scenarios_runner@1329eff</td></tr>
+<tr>
+<td title='Runner_Files.Help_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Help_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the Second Opinions title  should be present  and able to see description , when user click on Second Opinions title", "Optional[Test Help page positive functionality]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Help_positive_scenarios_runner@1329eff</td></tr>
+<tr>
+<td title='Runner_Files.Help_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Help_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the Award Points title  should be present  and able to see description , when user click on Award Points title", "Optional[Test Help page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Help_positive_scenarios_runner@1329eff</td></tr>
+<tr>
+<td title='Runner_Files.Help_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Help_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the Referral title  should be present  and able to see description , when user click on Referral title", "Optional[Test Help page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Help_positive_scenarios_runner@1329eff</td></tr>
+<tr>
+<td title='Runner_Files.Help_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Help_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the Profile title  should be present  and able to see description , when user click on Profile title", "Optional[Test Help page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Help_positive_scenarios_runner@1329eff</td></tr>
+<tr>
+<td title='Runner_Files.Help_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Help_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the Payments  title  should be present  and able to see description , when user click on Payments title", "Optional[Test Help page positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Help_positive_scenarios_runner@1329eff</td></tr>
+<tr>
+<td title='Runner_Files.Help_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Help_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the  Add coverage  title  should be present  and able to see description , when user click on Add coverage title", "Optional[Test Help page positive functionality]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Help_positive_scenarios_runner@1329eff</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to navigate to Your profile screen", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>22</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that Send Code button is disabled when they do not check the phone number", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed to verify when Security code and Re-enter password fields are blank", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid Security code  and Re-enter password", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed leave the Security code or Re-enter password field blank.", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>5</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is unable to  Edit the primary and deactivate email", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user gets validation message on leaving the fields blank in the Your profile Page", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid First name, Last name  or  Preferred name", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is unable to  Edit the User ID", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed to add email id when Email ID fields are blank", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid Email ID  or  already exist Email ID", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is unable to  Edit the primary and deactivate phone number", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid Phone number  or  Phone number fields are blank", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is unable to  Edit the primary and deactivate address", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user gets validation message on leaving the fields blank in the Add new address Page", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid Zip code in Add new address page", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user gets validation message on leaving the fields blank in the Add plan Page", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid First name of policy holder or Last name of policy holder  in Add plan page", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user gets validation message on leaving the fields blank in the Change password page", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering wrong Old password in Change password page", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid New password in Change password page", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering same data in Old password and New password fields in Change password page", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a  validation message on entering different data in New password and Confirm new password fields", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user get a  dialogue box when fail to upload the profile picture", "Optional[Your profile page negative scenarios]"</td>
+<td></td>
+<td>66</td>
+<td>Runner_Files.Your_profile_negative_scenarios_runner@4e268090</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the  Your Profile  title  should be present in  Your Profile screen", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>22</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that dialogue box will appear and able to enter the security code and password , when user click on edit icon", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to edit  the profile details", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>5</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is able to add Email ID in contact details", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to Activate , Edit and  Deactivate the Email ID", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is able to add Phone Number in contact details.", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to Activate , Edit and  Deactivate the Phone Number", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is able to add Address in contact details.", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to Activate , Edit , Primary and  Deactivate the Address", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is able to add Plan coverage", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to Activate , Edit , Make primary and  Deactivate the Plan coverage", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to change the password", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>6</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Your_profile_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Your_profile_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the password should be displayed on clicking the eye and user can able to save the details", "Optional[Test Your profile positive functionality]"</td>
+<td></td>
+<td>38</td>
+<td>Runner_Files.Your_profile_positive_scenarios_runner@52102734</td></tr>
+<tr>
+<td title='Runner_Files.Homepage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Homepage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to Welcome page", "Optional[User must be able to Login to the Homepage]"</td>
+<td></td>
+<td>20</td>
+<td>Runner_Files.Homepage_positive_scenarios_runner@29647f75</td></tr>
+<tr>
+<td title='Runner_Files.Homepage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Homepage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to Login with valid data", "Optional[User must be able to Login to the Homepage]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Homepage_positive_scenarios_runner@29647f75</td></tr>
+<tr>
+<td title='Runner_Files.Homepage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Homepage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is in Home page", "Optional[User must be able to Login to the Homepage]"</td>
+<td></td>
+<td>9</td>
+<td>Runner_Files.Homepage_positive_scenarios_runner@29647f75</td></tr>
+<tr>
+<td title='Runner_Files.Homepage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Homepage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the  Refer a friend page on clicking 'Refer a friend' button", "Optional[User must be able to Login to the Homepage]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Homepage_positive_scenarios_runner@29647f75</td></tr>
+<tr>
+<td title='Runner_Files.Homepage_positive_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Homepage_positive_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the Second Opinion page on clicking 'Request for second opinion' button", "Optional[User must be able to Login to the Homepage]"</td>
+<td></td>
+<td>8</td>
+<td>Runner_Files.Homepage_positive_scenarios_runner@29647f75</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to Welcome page", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>19</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to Login with valid data", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to click on 'Request for a Second opinion' button", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>7</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the 'Proceed' button is disabled when user unchecked the check box self and I agree to DocPanels terms and condition", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user should get a validation message on clicking "Continue to add clinical details" button without uploading "Upload your scan page"", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>9</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user should get validation message on clicking "Continue to add clinical details" button when the check box "I don not have a doctor's reports" is unchecked", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user should not allowed to  click on "Continue to add clinical details" without "upload my reports"", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed to leave  check box 'other'  unchecked", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed to proceed when 'First name' and 'Last name' fields are blank", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>5</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed leave blank 'First name' field", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed leave blank 'Last name' field", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user should get a validation message on entering invalid 'First name'  and 'Last name'", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed to Proceed with invalid 'First name' and valid 'Last name'", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>4</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is not allowed to Proceed with valid 'First name' and invalid 'Last name'", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>1</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the "Proceed" button is disabled when user unchecked  the check box 'I agree to DocPanels terms and condition'", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+<tr>
+<td title='Runner_Files.Request_second_opinion_negative_scenarios_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_Files.Request_second_opinion_negative_scenarios_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the "Proceed" button is disabled when user unchecked  the check box 'I am the legal guardian or have the necessary consents to order this second opinion'", "Optional[User must click on the Request for second opinion button and navigated to the Second opinion page]"</td>
+<td></td>
+<td>0</td>
+<td>Runner_Files.Request_second_opinion_negative_scenarios_runner@6a6afff2</td></tr>
+</table><p>
+</body>
+</html>
