@@ -458,7 +458,9 @@ public class Your_profile_negative_scenarios extends Generic_function {
 			click("profile_picture");
 			click("profile_upload_image");
 			click("profile_files");
+			Thread.sleep(1000);
 			path=td_reader("image_path");
+			Thread.sleep(1000);
 			StringSelection ss = new StringSelection(path);
 		     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 		     Robot robot = new Robot();
